@@ -28,7 +28,7 @@ const items: TimelineItem[] = [
     role: 'Teacher Intern',
     org: 'Pehchaan The Street School',
     dates: '2026',
-    tag: 'Volunteer',
+    tag: 'Internship',
     bullets: [
       'Volunteered as a teaching intern, contributing to education for underprivileged students.',
       'Earned an official Teacher Intern Certificate for dedicated service.',
