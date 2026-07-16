@@ -16,7 +16,7 @@ const items: TimelineItem[] = [
     icon: Building2,
     role: 'Web Developer Intern',
     org: 'Zedex Software · Aya Nagar',
-    dates: 'April 2025 – June 2025',
+    dates: 'April 2026 – June 2026',
     tag: 'Internship',
     bullets: [
       'Worked on real client projects with hands-on experience in full web development workflows.',
