@@ -14,9 +14,9 @@ interface TimelineItem {
 const items: TimelineItem[] = [
   {
     icon: Building2,
-    role: 'Web Developer Trainee',
+    role: 'Web Developer Intern',
     org: 'Zedex Software · Aya Nagar',
-    dates: 'May 2025 – July 2025',
+    dates: 'April 2025 – June 2025',
     tag: 'Internship',
     bullets: [
       'Worked on real client projects with hands-on experience in full web development workflows.',
