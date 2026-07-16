@@ -17,18 +17,30 @@ const projects = [
     demo: null,
   },
   {
-    title: '[Your Project Here]',
-    dates: '[Month Year – Month Year]',
+    title: 'GenAI Stadium Ops Fan Experience Platform',
+    dates: '2025',
     description:
-      'Placeholder — add your next project here. Describe what it does and why you built it.',
+      'An end-to-end solution leveraging Generative AI to elevate the stadium fan experience across navigation, crowd management, transportation, sustainability, multilingual assistance, and operational intelligence.',
     bullets: [
-      '[Key technical achievement or feature]',
-      '[Impact or outcome of the project]',
+      'Designed an end-to-end solution that uses Generative AI to improve at least one of: Navigation, Crowd Management, Transportation, Sustainability, Multilingual Assistance, or Operational Intelligence.',
+      'Integrated AI-driven assistance for real-time wayfinding, crowd density monitoring, and multilingual support to enhance fan engagement and safety.',
     ],
-    stack: ['[Tech]', '[Tech]', '[Tech]'],
-    github: null,
+    stack: ['Generative AI', 'Python', 'Full-Stack', 'Cloud'],
+    github: 'https://github.com/kumarishav296-bit',
     demo: null,
-    placeholder: true,
+  },
+  {
+    title: 'Personal Portfolio Website',
+    dates: '2025',
+    description:
+      'A personal portfolio website showcasing projects, skills, experience, and certifications with a clean, responsive design and smooth animations.',
+    bullets: [
+      'Built a personal portfolio website with responsive design, scroll animations, and a contact form.',
+      'Implemented reusable section components and a cohesive design system for easy content updates.',
+    ],
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    github: 'https://github.com/kumarishav296-bit',
+    demo: null,
   },
 ];
 
@@ -48,17 +60,8 @@ export default function Projects() {
         {projects.map((p) => (
           <div
             key={p.title}
-            className={`relative rounded-2xl bg-white border p-6 flex flex-col gap-4 transition-all duration-200 hover:shadow-md ${
-              p.placeholder
-                ? 'border-dashed border-slate-300 opacity-60'
-                : 'border-slate-100 hover:border-sky-200'
-            }`}
+            className="relative rounded-2xl bg-white border border-slate-100 p-6 flex flex-col gap-4 transition-all duration-200 hover:shadow-md hover:border-sky-200"
           >
-            {p.placeholder && (
-              <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-widest bg-amber-100 text-amber-600 px-2 py-0.5 rounded-full">
-                Placeholder
-              </span>
-            )}
             <div className="flex items-start gap-3">
               <div className="w-9 h-9 rounded-lg bg-sky-100 flex items-center justify-center shrink-0">
                 <Package size={17} className="text-sky-600" />

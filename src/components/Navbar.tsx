@@ -34,9 +34,7 @@ export default function Navbar() {
         <a
           href="#hero"
           onClick={(e) => { e.preventDefault(); handleLink('#hero'); }}
-          className={`font-semibold text-lg tracking-tight transition-colors ${
-            scrolled ? 'text-slate-900' : 'text-white'
-          }`}
+          className={`flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-br from-sky-400 to-teal-500 text-white font-bold text-sm shadow-md transition-all`}
         >
           RK
         </a>

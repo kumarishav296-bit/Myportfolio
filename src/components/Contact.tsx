@@ -6,10 +6,10 @@ const links = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'your.email@example.com',
-    href: 'mailto:your.email@example.com',
-    note: 'placeholder — update with your real email',
-    placeholder: true,
+    value: 'kumarishav296@gmail.com',
+    href: 'mailto:kumarishav296@gmail.com',
+    note: '',
+    placeholder: false,
   },
   {
     icon: Github,
