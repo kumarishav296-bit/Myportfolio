@@ -45,9 +45,10 @@ const projects = [
 ];
 
 const certifications = [
-  { text: 'Certificate of Training as UI/UX Trainee', org: 'Tripple One Solutions', icon: Award },
+  { text: 'Web Developer Intern Certificate', org: 'Zedex Software', icon: Star },
   { text: 'Teacher Intern Certificate', org: 'Pehchaan The Street School', icon: Star },
   { text: 'Certificate of Recognition', org: 'National Service Scheme', icon: Star },
+   { text: 'Certificate of Training as UI/UX Trainee', org: 'Tripple One Solutions', icon: Award }
 ];
 
 export default function Projects() {
