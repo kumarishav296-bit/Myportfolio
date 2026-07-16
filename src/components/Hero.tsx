@@ -1,4 +1,5 @@
 import { Github, Linkedin, ArrowDown, Mail } from 'lucide-react';
+import profilePhoto from '../assets/images/image copy.png';
 
 export default function Hero() {
   const scrollTo = (id: string) =>
@@ -23,9 +24,9 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-sky-500/10 blur-3xl pointer-events-none" />
 
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-        {/* Avatar initials */}
-        <div className="mx-auto mb-8 w-28 h-28 rounded-full bg-gradient-to-br from-sky-400 to-teal-500 flex items-center justify-center shadow-2xl ring-4 ring-sky-400/30 animate-fade-in">
-          <span className="text-3xl font-bold text-white tracking-wider">RK</span>
+        {/* Profile photo */}
+        <div className="mx-auto mb-8 w-28 h-28 rounded-full overflow-hidden shadow-2xl ring-4 ring-sky-400/30 animate-fade-in">
+          <img src={profilePhoto} alt="Rishav Kumar" className="w-full h-full object-cover object-top" />
         </div>
 
         <p
