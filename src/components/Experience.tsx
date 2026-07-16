@@ -16,18 +16,18 @@ const items: TimelineItem[] = [
     icon: Building2,
     role: 'Web Developer Trainee',
     org: 'Zedex Software · Aya Nagar',
-    dates: 'May 2025 – July 2025',
+    dates: '05 Apr 2026 – 30 Jun 2026',
     tag: 'Internship',
     bullets: [
-      'Worked on real client projects with hands-on experience in full web development workflows.',
-      'Integrated third-party APIs, social media embeds, Google Maps, and functional contact forms into client websites.',
+      'Worked on real client projects with hands-on experience in web development.',
+      'Integrated APIs, social media pages, Google Maps, and contact forms into client websites.',
     ],
   },
   {
     icon: Users,
     role: 'Teacher Intern',
     org: 'Pehchaan The Street School',
-    dates: '2026',
+    dates: '09 Jan 2026 – 09 Mar 2026',
     tag: 'Volunteer',
     bullets: [
       'Volunteered as a teaching intern, contributing to education for underprivileged students.',
@@ -62,7 +62,6 @@ export default function Experience() {
           const Icon = item.icon;
           return (
             <div key={item.role} className="relative group">
-              {/* Dot */}
               <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-sky-500 border-4 border-white shadow-md group-hover:scale-110 transition-transform" />
 
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:border-sky-200 hover:shadow-md transition-all duration-200">

@@ -1,13 +1,13 @@
-import { Github, ExternalLink, Package, Award, Star } from 'lucide-react';
+import { Github, ExternalLink, Package, Award, Star, Brain, Globe } from 'lucide-react';
 import SectionWrapper from './SectionWrapper';
 import SectionHeading from './SectionHeading';
 
 const projects = [
   {
     title: 'Shipments Data Entry Web Application',
-    dates: 'May 2025 – July 2025',
+    dates: 'May 2025 – Jul 2025',
     description:
-      'A full-featured web application for real-time shipment tracking and workflow automation, built as part of an academic project.',
+      'A full-featured web application for real-time shipment tracking and workflow automation, built as an academic project.',
     bullets: [
       'Built API and backend integration for real-time shipment tracking.',
       'Implemented efficient workflow automation to streamline data entry operations.',
@@ -17,25 +17,40 @@ const projects = [
     demo: null,
   },
   {
-    title: '[Your Project Here]',
-    dates: '[Month Year – Month Year]',
+    title: 'GenAI-Powered Stadium Operations Dashboard',
+    dates: '2026',
     description:
-      'Placeholder — add your next project here. Describe what it does and why you built it.',
+      'An AI-assisted dashboard prototype for stadium operations — ticketing, crowd flow, and incident response.',
     bullets: [
-      '[Key technical achievement or feature]',
-      '[Impact or outcome of the project]',
+      'Designed a GenAI-powered interface to surface real-time operational insights for stadium management.',
+      'Explored prompt engineering and AI integration to automate incident summaries and crowd-flow alerts.',
     ],
-    stack: ['[Tech]', '[Tech]', '[Tech]'],
+    stack: ['Gen AI', 'Prompt Engineering', 'UI/UX'],
     github: null,
     demo: null,
-    placeholder: true,
+  },
+  {
+    title: 'Personal Portfolio Website',
+    dates: '2026',
+    description:
+      'This website — a responsive portfolio built with React, TypeScript, and Tailwind CSS to showcase my work.',
+    bullets: [
+      'Designed and developed a fully responsive portfolio with smooth animations and section reveals.',
+      'Integrated a downloadable CV and direct links to GitHub and LinkedIn profiles.',
+    ],
+    stack: ['React', 'TypeScript', 'Tailwind CSS'],
+    github: 'https://github.com/kumarishav296-bit',
+    demo: null,
   },
 ];
 
 const certifications = [
-  { text: 'Certificate of Training as UI/UX Trainee', org: 'Tripple One Solutions', icon: Award },
+  { text: 'Certificate of Training — UI/UX Trainee', org: 'Tripple One Solutions', icon: Award },
+  { text: 'Web Developer Intern Certificate', org: 'Zedex Software', icon: Star },
   { text: 'Teacher Intern Certificate', org: 'Pehchaan The Street School', icon: Star },
   { text: 'Certificate of Recognition', org: 'National Service Scheme', icon: Star },
+  { text: 'Google Cloud Skills Boost', org: 'Google Cloud', icon: Star },
+  { text: 'Prompt Wars — AI Prompting', org: 'Prompt Wars', icon: Brain },
 ];
 
 export default function Projects() {
@@ -48,17 +63,8 @@ export default function Projects() {
         {projects.map((p) => (
           <div
             key={p.title}
-            className={`relative rounded-2xl bg-white border p-6 flex flex-col gap-4 transition-all duration-200 hover:shadow-md ${
-              p.placeholder
-                ? 'border-dashed border-slate-300 opacity-60'
-                : 'border-slate-100 hover:border-sky-200'
-            }`}
+            className="relative rounded-2xl bg-white border border-slate-100 p-6 flex flex-col gap-4 transition-all duration-200 hover:shadow-md hover:border-sky-200"
           >
-            {p.placeholder && (
-              <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-widest bg-amber-100 text-amber-600 px-2 py-0.5 rounded-full">
-                Placeholder
-              </span>
-            )}
             <div className="flex items-start gap-3">
               <div className="w-9 h-9 rounded-lg bg-sky-100 flex items-center justify-center shrink-0">
                 <Package size={17} className="text-sky-600" />
@@ -117,7 +123,7 @@ export default function Projects() {
       {/* Certifications */}
       <div>
         <h3 className="text-lg font-semibold text-slate-800 mb-5">Certifications</h3>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {certifications.map(({ text, org, icon: Icon }) => (
             <div
               key={text}
